@@ -34,8 +34,11 @@ namespace Sniffer
             this.options = new System.Windows.Forms.ToolStripMenuItem();
             this.about = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.adapterSelect = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.packetOutBox = new System.Windows.Forms.ListView();
             this.Number = new System.Windows.Forms.ColumnHeader();
             this.Time = new System.Windows.Forms.ColumnHeader();
             this.Source = new System.Windows.Forms.ColumnHeader();
@@ -45,9 +48,6 @@ namespace Sniffer
             this.Protocol = new System.Windows.Forms.ColumnHeader();
             this.Package_Size = new System.Windows.Forms.ColumnHeader();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -100,7 +100,7 @@ namespace Sniffer
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.comboBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.adapterSelect);
             this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
             // 
             // splitContainer1.Panel2
@@ -110,12 +110,39 @@ namespace Sniffer
             this.splitContainer1.SplitterDistance = 440;
             this.splitContainer1.TabIndex = 1;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(510, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(25, 25);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Sniffer.Properties.Resources.start1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(478, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // adapterSelect
+            // 
+            this.adapterSelect.FormattingEnabled = true;
+            this.adapterSelect.Location = new System.Drawing.Point(12, 6);
+            this.adapterSelect.Name = "adapterSelect";
+            this.adapterSelect.Size = new System.Drawing.Size(460, 23);
+            this.adapterSelect.TabIndex = 0;
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.listView1);
+            this.groupBox1.Controls.Add(this.packetOutBox);
             this.groupBox1.Location = new System.Drawing.Point(4, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1263, 402);
@@ -123,13 +150,13 @@ namespace Sniffer
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sniffed Packets";
             // 
-            // listView1
+            // packetOutBox
             // 
-            this.listView1.AllowColumnReorder = true;
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.packetOutBox.AllowColumnReorder = true;
+            this.packetOutBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.packetOutBox.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Number,
             this.Time,
             this.Source,
@@ -138,16 +165,16 @@ namespace Sniffer
             this.Destination_Port,
             this.Protocol,
             this.Package_Size});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 22);
-            this.listView1.MinimumSize = new System.Drawing.Size(4, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1251, 374);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.packetOutBox.FullRowSelect = true;
+            this.packetOutBox.GridLines = true;
+            this.packetOutBox.HideSelection = false;
+            this.packetOutBox.Location = new System.Drawing.Point(6, 22);
+            this.packetOutBox.MinimumSize = new System.Drawing.Size(4, 4);
+            this.packetOutBox.Name = "packetOutBox";
+            this.packetOutBox.Size = new System.Drawing.Size(1251, 374);
+            this.packetOutBox.TabIndex = 0;
+            this.packetOutBox.UseCompatibleStateImageBehavior = false;
+            this.packetOutBox.View = System.Windows.Forms.View.Details;
             // 
             // Number
             // 
@@ -204,32 +231,6 @@ namespace Sniffer
             this.splitContainer2.SplitterDistance = 423;
             this.splitContainer2.TabIndex = 0;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(317, 23);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Sniffer.Properties.Resources.start1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(336, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(368, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(25, 25);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -263,7 +264,7 @@ namespace Sniffer
         private System.Windows.Forms.ToolStripMenuItem options;
         private System.Windows.Forms.ToolStripMenuItem about;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView packetOutBox;
         private System.Windows.Forms.ColumnHeader Number;
         private System.Windows.Forms.ColumnHeader Time;
         private System.Windows.Forms.ColumnHeader Source;
@@ -274,7 +275,7 @@ namespace Sniffer
         private System.Windows.Forms.ColumnHeader Package_Size;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox adapterSelect;
     }
 }
 
