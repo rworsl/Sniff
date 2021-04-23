@@ -1,33 +1,230 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "PacketDotNet/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/PacketDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PacketDotNet.dll": {}
+        }
+      },
+      "Pcap.Net.x64/1.0.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/PcapDotNet.Base.dll": {},
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {},
+          "lib/net45/PcapDotNet.Core.dll": {},
+          "lib/net45/PcapDotNet.Packets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PcapDotNet.Base.dll": {},
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {},
+          "lib/net45/PcapDotNet.Core.dll": {},
+          "lib/net45/PcapDotNet.Packets.dll": {}
+        }
+      },
+      "Pcap.Net.x86/1.0.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/PcapDotNet.Base.dll": {},
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {},
+          "lib/net45/PcapDotNet.Core.dll": {},
+          "lib/net45/PcapDotNet.Packets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/PcapDotNet.Base.dll": {},
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {},
+          "lib/net45/PcapDotNet.Core.dll": {},
+          "lib/net45/PcapDotNet.Packets.dll": {}
+        }
+      },
+      "SharpPcap/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "PacketDotNet": "1.1.2",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PacketDotNet/1.1.2": {
+      "sha512": "UNyq8BHUZA17++FAfPswZqV5y55hW6wWThuR9JRkz6swRAbCLltaHoH0nmBG51qoQzbAcDc92cafLJMGkt5dFg==",
+      "type": "package",
+      "path": "packetdotnet/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/PacketDotNet.dll",
+        "lib/netstandard2.0/PacketDotNet.dll",
+        "packetdotnet.1.1.2.nupkg.sha512",
+        "packetdotnet.nuspec"
+      ]
+    },
+    "Pcap.Net.x64/1.0.4.1": {
+      "sha512": "8kyqaySh23tikkLMZW/DgI3uf+om3QCvvg1dj2h7O6nKHoz9G2j0OfIqozI8FvkymbcHei0JjeBcPP3/t6kAtA==",
+      "type": "package",
+      "path": "pcap.net.x64/1.0.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/PcapDotNet.Base.dll",
+        "lib/net45/PcapDotNet.Base.pdb",
+        "lib/net45/PcapDotNet.Base.xml",
+        "lib/net45/PcapDotNet.Core.Extensions.XML",
+        "lib/net45/PcapDotNet.Core.Extensions.dll",
+        "lib/net45/PcapDotNet.Core.Extensions.pdb",
+        "lib/net45/PcapDotNet.Core.dll",
+        "lib/net45/PcapDotNet.Core.pdb",
+        "lib/net45/PcapDotNet.Core.xml",
+        "lib/net45/PcapDotNet.Packets.dll",
+        "lib/net45/PcapDotNet.Packets.pdb",
+        "lib/net45/PcapDotNet.Packets.xml",
+        "license.txt",
+        "pcap.net.x64.1.0.4.1.nupkg.sha512",
+        "pcap.net.x64.nuspec"
+      ]
+    },
+    "Pcap.Net.x86/1.0.4.1": {
+      "sha512": "XRkiDvDs9Gx5i3wCaL2a8/i/BSG3ZX3oe0i75PR8eqEx3ZZE7+hkHZKRMKpc6EIhuZXH2v8ptwrpKr3wQN43Bg==",
+      "type": "package",
+      "path": "pcap.net.x86/1.0.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/PcapDotNet.Base.dll",
+        "lib/net45/PcapDotNet.Base.pdb",
+        "lib/net45/PcapDotNet.Base.xml",
+        "lib/net45/PcapDotNet.Core.Extensions.XML",
+        "lib/net45/PcapDotNet.Core.Extensions.dll",
+        "lib/net45/PcapDotNet.Core.Extensions.pdb",
+        "lib/net45/PcapDotNet.Core.dll",
+        "lib/net45/PcapDotNet.Core.pdb",
+        "lib/net45/PcapDotNet.Core.xml",
+        "lib/net45/PcapDotNet.Packets.dll",
+        "lib/net45/PcapDotNet.Packets.pdb",
+        "lib/net45/PcapDotNet.Packets.xml",
+        "license.txt",
+        "pcap.net.x86.1.0.4.1.nupkg.sha512",
+        "pcap.net.x86.nuspec"
+      ]
+    },
+    "SharpPcap/5.4.0": {
+      "sha512": "ND3G6Q+WW3nZ0kfE5U8Tsy1TY2ybn5oQCvPBp5Pd9bycdHt1SrAVzpmga6J1qO0Fm58XhYrSMIfKcclWqo5Meg==",
+      "type": "package",
+      "path": "sharppcap/5.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SharpPcap.dll",
+        "sharppcap.5.4.0.nupkg.sha512",
+        "sharppcap.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "sha512": "IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Pcap.Net.x64 >= 1.0.4.1",
+      "Pcap.Net.x86 >= 1.0.4.1",
+      "SharpPcap >= 5.4.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\RichW\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\Rich\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
+      "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
       "projectName": "Sniffer",
-      "projectPath": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
-      "packagesPath": "C:\\Users\\RichW\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\obj\\",
+      "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
+      "packagesPath": "C:\\Users\\Rich\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\RichW\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Rich\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -53,6 +250,20 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Pcap.Net.x64": {
+            "target": "Package",
+            "version": "[1.0.4.1, )"
+          },
+          "Pcap.Net.x86": {
+            "target": "Package",
+            "version": "[1.0.4.1, )"
+          },
+          "SharpPcap": {
+            "target": "Package",
+            "version": "[5.4.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -74,5 +285,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Pcap.Net.x64 1.0.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Pcap.Net.x64",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Pcap.Net.x86 1.0.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Pcap.Net.x86",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

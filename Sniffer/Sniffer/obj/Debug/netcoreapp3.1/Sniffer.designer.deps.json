@@ -5,7 +5,123 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "PacketDotNet/1.1.2": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PacketDotNet.dll": {
+            "assemblyVersion": "1.1.2.0",
+            "fileVersion": "1.1.2.0"
+          }
+        }
+      },
+      "Pcap.Net.x64/1.0.4.1": {
+        "runtime": {
+          "lib/net45/PcapDotNet.Base.dll": {
+            "assemblyVersion": "1.0.4.25027",
+            "fileVersion": "1.0.4.0"
+          },
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {
+            "assemblyVersion": "1.0.4.25151",
+            "fileVersion": "1.0.4.0"
+          },
+          "lib/net45/PcapDotNet.Core.dll": {
+            "assemblyVersion": "1.0.4.25149",
+            "fileVersion": "0.0.0.0"
+          },
+          "lib/net45/PcapDotNet.Packets.dll": {
+            "assemblyVersion": "1.0.4.25028",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "Pcap.Net.x86/1.0.4.1": {
+        "runtime": {
+          "lib/net45/PcapDotNet.Base.dll": {
+            "assemblyVersion": "1.0.4.25027",
+            "fileVersion": "1.0.4.0"
+          },
+          "lib/net45/PcapDotNet.Core.Extensions.dll": {
+            "assemblyVersion": "1.0.4.25069",
+            "fileVersion": "1.0.4.0"
+          },
+          "lib/net45/PcapDotNet.Core.dll": {
+            "assemblyVersion": "1.0.4.25067",
+            "fileVersion": "0.0.0.0"
+          },
+          "lib/net45/PcapDotNet.Packets.dll": {
+            "assemblyVersion": "1.0.4.25028",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "SharpPcap/5.4.0": {
+        "dependencies": {
+          "PacketDotNet": "1.1.2",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {
+            "assemblyVersion": "5.4.0.0",
+            "fileVersion": "5.4.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.6.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "PacketDotNet/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UNyq8BHUZA17++FAfPswZqV5y55hW6wWThuR9JRkz6swRAbCLltaHoH0nmBG51qoQzbAcDc92cafLJMGkt5dFg==",
+      "path": "packetdotnet/1.1.2",
+      "hashPath": "packetdotnet.1.1.2.nupkg.sha512"
+    },
+    "Pcap.Net.x64/1.0.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8kyqaySh23tikkLMZW/DgI3uf+om3QCvvg1dj2h7O6nKHoz9G2j0OfIqozI8FvkymbcHei0JjeBcPP3/t6kAtA==",
+      "path": "pcap.net.x64/1.0.4.1",
+      "hashPath": "pcap.net.x64.1.0.4.1.nupkg.sha512"
+    },
+    "Pcap.Net.x86/1.0.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XRkiDvDs9Gx5i3wCaL2a8/i/BSG3ZX3oe0i75PR8eqEx3ZZE7+hkHZKRMKpc6EIhuZXH2v8ptwrpKr3wQN43Bg==",
+      "path": "pcap.net.x86/1.0.4.1",
+      "hashPath": "pcap.net.x86.1.0.4.1.nupkg.sha512"
+    },
+    "SharpPcap/5.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ND3G6Q+WW3nZ0kfE5U8Tsy1TY2ybn5oQCvPBp5Pd9bycdHt1SrAVzpmga6J1qO0Fm58XhYrSMIfKcclWqo5Meg==",
+      "path": "sharppcap/5.4.0",
+      "hashPath": "sharppcap.5.4.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+    }
+  }
 }

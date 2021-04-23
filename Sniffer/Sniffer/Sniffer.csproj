@@ -6,4 +6,10 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Pcap.Net.x64" Version="1.0.4.1" />
+    <PackageReference Include="Pcap.Net.x86" Version="1.0.4.1" />
+    <PackageReference Include="SharpPcap" Version="5.4.0" />
+  </ItemGroup>
+
 </Project>

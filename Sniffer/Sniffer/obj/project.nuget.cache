@@ -1,8 +1,36 @@
 {
   "version": 2,
-  "dgSpecHash": "pr6en0Wk9NZ7NMCPsSN9nh/fG0w/aCZbk/4XFhJQvy/Xss4NXwPyXoAq1UGLHYd7FQmlWZCbc0iaiwGAL2wfzA==",
+  "dgSpecHash": "0MGN7oTsUq5pNbQHUCrI1OJHt5mBSZLqxzJhgRXGCR/NUAkUWxabqxFCkDIm8VXjemSsF3H0VSLnb7NfwUz/iA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rich\\.nuget\\packages\\packetdotnet\\1.1.2\\packetdotnet.1.1.2.nupkg.sha512",
+    "C:\\Users\\Rich\\.nuget\\packages\\pcap.net.x64\\1.0.4.1\\pcap.net.x64.1.0.4.1.nupkg.sha512",
+    "C:\\Users\\Rich\\.nuget\\packages\\pcap.net.x86\\1.0.4.1\\pcap.net.x86.1.0.4.1.nupkg.sha512",
+    "C:\\Users\\Rich\\.nuget\\packages\\sharppcap\\5.4.0\\sharppcap.5.4.0.nupkg.sha512",
+    "C:\\Users\\Rich\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Rich\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Pcap.Net.x64 1.0.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Pcap.Net.x64",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Pcap.Net.x86 1.0.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Pcap.Net.x86",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

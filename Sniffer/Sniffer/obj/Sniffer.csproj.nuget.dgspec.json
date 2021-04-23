@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj": {}
+    "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj": {
+    "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
+        "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
         "projectName": "Sniffer",
-        "projectPath": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
-        "packagesPath": "C:\\Users\\RichW\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RichW\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\obj\\",
+        "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\Sniffer.csproj",
+        "packagesPath": "C:\\Users\\Rich\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Sniff\\Sniffer\\Sniffer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\RichW\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rich\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -45,6 +43,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Pcap.Net.x64": {
+              "target": "Package",
+              "version": "[1.0.4.1, )"
+            },
+            "Pcap.Net.x86": {
+              "target": "Package",
+              "version": "[1.0.4.1, )"
+            },
+            "SharpPcap": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
